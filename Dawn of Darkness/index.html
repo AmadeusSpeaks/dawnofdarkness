@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dawn of Darkness - Lore</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: url('images/obsidian-texture.png') repeat;
+      background-size: 128px 128px;
+      font-family: 'Cinzel', serif; /* Swap for custom fantasy font if desired */
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+  </style>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>document.addEventListener("DOMContentLoaded", () => AOS.init());</script>
+
+</head>
+<body class="text-white">
+
+  <!-- HERO SECTION -->
+  <header class="relative h-screen w-full overflow-hidden">
+    <!-- Background image (Server Spawn Screenshot) -->
+    <div class="absolute inset-0 bg-cover bg-center scale-105 blur-sm brightness-75" style="background-image: url('images/server-spawn.jpg'); z-index: 1;"></div>
+    
+    <!-- Hero Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+
+    <!-- Centered Content -->
+    <div class="relative z-20 flex flex-col items-center justify-center h-full text-center px-6">
+      <!-- Logo Image -->
+      <img src="images/dawn-logo.png" alt="Dawn of Darkness" class="w-[320px] md:w-[420px] drop-shadow-xl mb-6" />
+      
+      <!-- Tagline -->
+      <p class="text-xl md:text-2xl text-gray-300 max-w-2xl leading-relaxed font-light">
+        Journey into the shadows of ancient realms. <br>
+        Discover the <span class="text-white font-semibold">Lore</span>, <span class="text-white font-semibold">Legends</span>, and <span class="text-white font-semibold">Myths</span> that forged our world.
+      </p>
+    </div>
+
+    <!-- Navbar - Glassmorphic -->
+    <nav class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-4xl z-30 mb-8">
+      <div class="backdrop-blur bg-black bg-opacity-50 border border-gray-700 rounded-full px-6 py-3 flex justify-center space-x-6 text-sm uppercase tracking-wider text-gray-200 shadow-lg">
+        <a href="#home" class="hover:text-white transition">Home</a>
+        <a href="#lore" class="hover:text-white transition">Lore</a>
+        <a href="#timeline" class="hover:text-white transition">Timeline</a>
+        <a href="#myths" class="hover:text-white transition">Myths & Legends</a>
+        <a href="https://discord.gg/YOURSERVER" target="_blank" class="hover:text-indigo-400 transition">Discord</a>
+        <a href="https://youtube.com/YOURCHANNEL" target="_blank" class="hover:text-red-400 transition">YouTube</a>
+        <a href="https://tiktok.com/@YOURHANDLE" target="_blank" class="hover:text-pink-400 transition">TikTok</a>
+      </div>
+    </nav>
+  </header>
+
+<section id="lore" class="py-20 px-4 bg-black bg-opacity-90 text-gray-200">
+  <div class="max-w-4xl mx-auto">
+
+    <!-- Intro -->
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-10 border-b border-gray-700 pb-4">
+      The Lore of the Crystallium
+    </h2>
+    <p class="text-gray-400 text-lg leading-relaxed text-center mb-12">
+      Before time, before flame, before the world knew light… there were five.
+      Born of the void, bound by essence. They were The Crystallium — the divine force behind all existence.
+    </p>
+
+    <!-- Gods Grid -->
+    <div class="grid md:grid-cols-2 gap-6 mb-16">
+
+      <!-- Earth -->
+      <div class="bg-gray-900 border border-green-700 p-6 rounded-xl shadow" data-aos="fade-up">
+        <h3 class="text-2xl text-green-400 font-bold mb-2">The Earth</h3>
+        <p class="text-sm text-gray-400">
+          The first of all, the foundation of life and balance. The Earth guided the others with wisdom, shaping land and life.
+        </p>
+      </div>
+
+      <!-- Shadow -->
+      <div class="bg-gray-900 border border-purple-700 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-2xl text-purple-400 font-bold mb-2">The Shadow</h3>
+        <p class="text-sm text-gray-400">
+          A silent friend to Light, dwelling between glow and gloom. The Shadow watches, never fully seen.
+        </p>
+      </div>
+
+      <!-- Light -->
+      <div class="bg-gray-900 border border-yellow-600 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-2xl text-yellow-300 font-bold mb-2">The Light</h3>
+        <p class="text-sm text-gray-400">
+          The bringer of warmth, clarity, and hope. Often paired with Shadow, keeping balance across the skies.
+        </p>
+      </div>
+
+      <!-- The Depths -->
+      <div class="bg-gray-900 border border-blue-700 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-2xl text-blue-400 font-bold mb-2">The Depths</h3>
+        <p class="text-sm text-gray-400">
+          A realm of secrets and subterranes, swayed by power and corrupted by The Dark’s promise of dominion.
+        </p>
+      </div>
+
+      <!-- The Dark -->
+      <div class="bg-gray-900 border border-red-700 p-6 rounded-xl shadow col-span-full" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="text-2xl text-red-400 font-bold mb-2">The Dark</h3>
+        <p class="text-sm text-gray-400">
+          The betrayer. Once part of the five, now enemy to them all. It spawned monsters, warped domains, and seeks to unravel all unity.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- The Fall of Unity -->
+    <div class="mb-16">
+      <h3 class="text-3xl font-semibold mb-4 text-indigo-300">The Fracture</h3>
+      <p class="text-gray-400 text-base leading-relaxed">
+        At first, The Crystallium were united. Earth led, Light and Shadow stood as guardians of balance, and even The Depths followed their guidance.
+        But The Dark grew jealous, seeking power beyond order. It turned to The Depths with promises of strength, and together they shattered harmony.
+        <br><br>
+        The alliance between Light and Shadow remained — protectors of the surface. But from beneath, monsters were born: Piglins, Pigmen, Endermen, and more — corrupted spawns of the twisted alliance.
+      </p>
+    </div>
+
+    <!-- Champions & the 3rd Age -->
+    <div class="mb-16">
+      <h3 class="text-3xl font-semibold mb-4 text-yellow-300">Champions of the Earth</h3>
+      <p class="text-gray-400 text-base leading-relaxed">
+        With the world falling to ruin, Light and Shadow knelt before Earth, pleading for salvation.
+        Earth answered — by creating Champions, beings of spirit and resolve, forged to combat the encroaching darkness.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-3xl font-semibold mb-4 text-teal-300">The Third Age</h3>
+      <p class="text-gray-400 text-base leading-relaxed">
+        Now, in the Third Age, balance is fragile.
+        Villagers and Pillagers war. Monsters roam unchecked. The Champions must rise again.
+        The world is young. Nations have yet to form. But there is hope — through strength, wisdom, and unity.
+        <br><br>
+        Players will carve cities, build kingdoms (via Towny), and decide the fate of the world itself.
+        This is the beginning of your chapter in the story of <b><i>Dawn of Darkness</i></b>.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+ <section id="timeline" class="py-24 px-4 bg-black bg-opacity-90 text-gray-200">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 border-b border-gray-700 pb-4">
+      Timeline of the Realms
+    </h2>
+
+    <div class="relative border-l-4 border-gray-800 pl-8 space-y-16">
+
+      <!-- AGE 1: The Awakening -->
+      <div class="relative" data-aos="fade-up">
+        <div class="absolute -left-5 top-2 w-4 h-4 bg-green-400 rounded-full shadow-lg border-2 border-black"></div>
+        <div class="bg-gray-900 border border-green-700 bg-opacity-80 rounded-xl p-6 shadow-lg">
+          <p class="text-sm text-green-300 font-semibold uppercase mb-1">The Awakening</p>
+          <h3 class="text-2xl font-bold text-white mb-2">The Birth of The Earth</h3>
+          <p class="text-gray-400 text-base">
+            In absolute silence, from the heart of the void, The Earth awakened — the first of the Crystallium. With its breath, mountains rose, oceans formed, and the World Tree rooted itself deep into the soul of the world.
+          </p>
+        </div>
+      </div>
+
+      <!-- AGE 2: Unity -->
+      <div class="relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="absolute -left-5 top-2 w-4 h-4 bg-blue-400 rounded-full shadow-lg border-2 border-black"></div>
+        <div class="bg-gray-900 border border-blue-700 bg-opacity-80 rounded-xl p-6 shadow-lg">
+          <p class="text-sm text-blue-300 font-semibold uppercase mb-1">Unity</p>
+          <h3 class="text-2xl font-bold text-white mb-2">The Crystallium Form</h3>
+          <p class="text-gray-400 text-base">
+            Shadow, Light, Dark, and The Depths emerged — each a reflection of balance and chaos. Together with The Earth, they shaped the planes of reality in harmony.
+          </p>
+        </div>
+      </div>
+
+      <!-- AGE 3: The Fracture -->
+      <div class="relative" data-aos="fade-up" data-aos-delay="200">
+        <div class="absolute -left-5 top-2 w-4 h-4 bg-red-500 rounded-full shadow-lg border-2 border-black"></div>
+        <div class="bg-gray-900 border border-red-700 bg-opacity-80 rounded-xl p-6 shadow-lg">
+          <p class="text-sm text-red-300 font-semibold uppercase mb-1">The Fracture</p>
+          <h3 class="text-2xl font-bold text-white mb-2">The Betrayal of The Dark</h3>
+          <p class="text-gray-400 text-base">
+            Driven by hunger for dominance, The Dark severed ties with The Earth and corrupted The Depths with false promises. From this union, monsters emerged — twisted beings like Endermen and Piglins clawed into the world.
+          </p>
+        </div>
+      </div>
+
+      <!-- AGE 4: The Summoning -->
+      <div class="relative" data-aos="fade-up" data-aos-delay="300">
+        <div class="absolute -left-5 top-2 w-4 h-4 bg-yellow-400 rounded-full shadow-lg border-2 border-black"></div>
+        <div class="bg-gray-900 border border-yellow-600 bg-opacity-80 rounded-xl p-6 shadow-lg">
+          <p class="text-sm text-yellow-300 font-semibold uppercase mb-1">The Summoning</p>
+          <h3 class="text-2xl font-bold text-white mb-2">Champions of the Earth</h3>
+          <p class="text-gray-400 text-base">
+            Light and Shadow, unable to stop the flood of darkness alone, begged The Earth to forge Champions. Gifted with radiant essence, they rose to fight the horrors brought forth from the Deep and Dark.
+          </p>
+        </div>
+      </div>
+
+      <!-- AGE 5: The Third Age -->
+      <div class="relative" data-aos="fade-up" data-aos-delay="400">
+        <div class="absolute -left-5 top-2 w-4 h-4 bg-purple-500 rounded-full shadow-lg border-2 border-black"></div>
+        <div class="bg-gray-900 border border-purple-700 bg-opacity-80 rounded-xl p-6 shadow-lg">
+          <p class="text-sm text-purple-300 font-semibold uppercase mb-1">The Third Age (Present Day)</p>
+          <h3 class="text-2xl font-bold text-white mb-2">Rise of Nations</h3>
+          <p class="text-gray-400 text-base">
+            In the aftermath, Villagers and Pillagers war. Champions struggle to endure. Players enter a fractured world — one they can rebuild through Towns, Nations, and new alliances. But The Dark stirs still, hidden beneath stone and silence.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="myths" class="py-24 px-4 bg-black bg-opacity-90 text-gray-200">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 border-b border-gray-700 pb-4">
+      Myths & Legends
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Chains of Judgement -->
+      <div class="bg-gray-900 border border-red-700 p-6 rounded-xl shadow-md hover:shadow-lg group" data-aos="fade-up">
+        <h3 class="text-2xl font-bold text-red-400 group-hover:text-red-300 transition">Chains of Judgement</h3>
+        <p class="mt-2 text-sm text-gray-400">
+          Wielded by The Dark, the chains bind souls to torment. Legends whisper they can tear apart even reality itself.
+        </p>
+        <button class="mt-4 text-red-400 hover:text-red-300 text-xs font-semibold uppercase tracking-wider">Read More →</button>
+      </div>
+
+      <!-- Trident of the Deep -->
+      <div class="bg-gray-900 border border-blue-700 p-6 rounded-xl shadow-md hover:shadow-lg group" data-aos="fade-up" data-aos-delay="50">
+        <h3 class="text-2xl font-bold text-blue-400 group-hover:text-blue-300 transition">Trident of the Deep</h3>
+        <p class="mt-2 text-sm text-gray-400">
+          Forged beneath the darkest oceans, it commands tides and silence. Only The Depths may wield it freely.
+        </p>
+        <button class="mt-4 text-blue-400 hover:text-blue-300 text-xs font-semibold uppercase tracking-wider">Read More →</button>
+      </div>
+
+      <!-- Mace of the Light -->
+      <div class="bg-gray-900 border border-yellow-600 p-6 rounded-xl shadow-md hover:shadow-lg group" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-2xl font-bold text-yellow-300 group-hover:text-yellow-200 transition">Mace of the Light</h3>
+        <p class="mt-2 text-sm text-gray-400">
+          Radiant and blinding, the Mace burns the undead into ash. Its mere presence purifies shadow.
+        </p>
+        <button class="mt-4 text-yellow-300 hover:text-yellow-200 text-xs font-semibold uppercase tracking-wider">Read More →</button>
+      </div>
+
+      <!-- Axe of Shadows -->
+      <div class="bg-gray-900 border border-purple-700 p-6 rounded-xl shadow-md hover:shadow-lg group" data-aos="fade-up" data-aos-delay="150">
+        <h3 class="text-2xl font-bold text-purple-400 group-hover:text-purple-300 transition">Axe of Shadows</h3>
+        <p class="mt-2 text-sm text-gray-400">
+          Said to vanish between dimensions, the Axe was once used to cleave lies from truth. It is now lost to time.
+        </p>
+        <button class="mt-4 text-purple-400 hover:text-purple-300 text-xs font-semibold uppercase tracking-wider">Read More →</button>
+      </div>
+
+      <!-- Hoe of Life -->
+      <div class="bg-gray-900 border border-green-700 p-6 rounded-xl shadow-md hover:shadow-lg group" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-2xl font-bold text-green-400 group-hover:text-green-300 transition">Hoe of Life</h3>
+        <p class="mt-2 text-sm text-gray-400">
+          The World’s sacred relic — used not to destroy, but to bring forth life where desolation once ruled.
+        </p>
+        <button class="mt-4 text-green-400 hover:text-green-300 text-xs font-semibold uppercase tracking-wider">Read More →</button>
+      </div>
+
+      <!-- The First Seed -->
+      <div class="bg-gray-900 border border-amber-700 p-6 rounded-xl shadow-md hover:shadow-lg group" data-aos="fade-up" data-aos-delay="250">
+        <h3 class="text-2xl font-bold text-amber-400 group-hover:text-amber-300 transition">The First Seed</h3>
+        <p class="mt-2 text-sm text-gray-400">
+          A potato. Yet, from it came harvest, hope, and hunger. None know who planted it — only that it grew.
+        </p>
+        <button class="mt-4 text-amber-400 hover:text-amber-300 text-xs font-semibold uppercase tracking-wider">Read More →</button>
+      </div>
+
+      <!-- Garden of Light and Shadow -->
+      <div class="bg-gray-900 border border-indigo-600 p-6 rounded-xl shadow-md hover:shadow-lg group" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-2xl font-bold text-indigo-300 group-hover:text-indigo-200 transition">Garden of Light & Shadow</h3>
+        <p class="mt-2 text-sm text-gray-400">
+          No monster sets foot here. Flowers bloom in moonlight, and twin statues stand: one bright, one still.
+        </p>
+        <button class="mt-4 text-indigo-300 hover:text-indigo-200 text-xs font-semibold uppercase tracking-wider">Read More →</button>
+      </div>
+
+      <!-- Catacombs of Mirenia -->
+      <div class="bg-gray-900 border border-fuchsia-700 p-6 rounded-xl shadow-md hover:shadow-lg group" data-aos="fade-up" data-aos-delay="350">
+        <h3 class="text-2xl font-bold text-fuchsia-400 group-hover:text-fuchsia-300 transition">Catacombs of Mirenia</h3>
+        <p class="mt-2 text-sm text-gray-400">
+          Beneath the Earth’s crust lies the tomb-city of The Dark’s loyal dead. Rumors say it still grows…
+        </p>
+        <button class="mt-4 text-fuchsia-400 hover:text-fuchsia-300 text-xs font-semibold uppercase tracking-wider">Read More →</button>
+      </div>
+
+      <!-- Ocean City of the Depths -->
+      <div class="bg-gray-900 border border-cyan-700 p-6 rounded-xl shadow-md hover:shadow-lg group" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="text-2xl font-bold text-cyan-300 group-hover:text-cyan-200 transition">The Ocean City</h3>
+        <p class="mt-2 text-sm text-gray-400">
+          Built from coral and dark crystal, the Depths’ city vanishes from charts. It sleeps beneath waves eternal.
+        </p>
+        <button class="mt-4 text-cyan-300 hover:text-cyan-200 text-xs font-semibold uppercase tracking-wider">Read More →</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+</body>
+</html>

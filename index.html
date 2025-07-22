@@ -3,363 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dawn of Darkness - Lore</title>
+  <title>Dawn of Darkness | Minecraft Server</title>
   <script src="https://cdn.tailwindcss.com"></script>
+ <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+
+
   <style>
-    body {
-      background: url('images/obsidian-texture.png') repeat;
-      background-size: 128px 128px;
-      font-family: 'Cinzel', serif; /* Swap for custom fantasy font if desired */
+    .hero-title {
+      font-family: 'Cinzel Decorative', serif;
     }
 
-    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
-  </style>
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>document.addEventListener("DOMContentLoaded", () => AOS.init());</script>
+    .nav-link-effect::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      left: 0;
+      bottom: -2px;
+      background: #ef4444;
+      transition: width 0.4s ease;
+    }
 
+    .group:hover .nav-link-effect::after {
+      width: 100%;
+    }
+
+    .nav-link-effect {
+      position: relative;
+      transition: color 0.4s ease;
+      display: inline-block;
+    }
+
+    .group:hover .nav-link-effect {
+      color: #ef4444;
+      text-shadow: 0 0 8px rgba(239, 68, 68, 0.6);
+    }
+</style>
 </head>
-<body class="text-white">
+<body class="bg-black text-white" style="background-image: url('images/obsidian-texture.png'); background-repeat: repeat; background-size: 128px 128px;">
+  
 
-  <!-- HERO SECTION -->
-  <header class="relative h-screen w-full overflow-hidden">
-    <!-- Background image (Server Spawn Screenshot) -->
-    <div class="absolute inset-0 bg-cover bg-center scale-105 blur-sm brightness-75" style="background-image: url('images/server-spawn.jpg'); z-index: 1;"></div>
-    
-    <!-- Hero Overlay -->
-    <div class="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
-
-    <!-- Centered Content -->
-    <div class="relative z-20 flex flex-col items-center justify-center h-full text-center px-6">
-      <!-- Logo Image -->
-      <img src="images/dawn-logo.png" alt="Dawn of Darkness" class="w-[320px] md:w-[420px] drop-shadow-xl mb-6" />
-      
-      <!-- Tagline -->
-      <p class="text-xl md:text-2xl text-gray-300 max-w-2xl leading-relaxed font-light">
-        Journey into the shadows of ancient realms. <br>
-        Discover the <span class="text-white font-semibold">Lore</span>, <span class="text-white font-semibold">Legends</span>, and <span class="text-white font-semibold">Myths</span> that forged our world.
-      </p>
+<!-- Navbar -->
+  <nav class="flex items-center justify-between px-6 py-4 bg-black/70 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-lg">
+    <a href="index.html" class="flex items-center">
+      <img src="images/dawn-logo.png" alt="Dawn of Darkness Logo" class="h-10 md:h-12 object-contain" />
+    </a>
+    <ul class="hidden md:flex gap-6 text-base font-semibold tracking-widest uppercase">
+      <li><a href="index.html" class="relative  text-red-500 transition duration-300 group"><span class="nav-link-effect">Home</span></a></li>
+      <li><a href="lore.html" class="relative text-gray-200 transition duration-300 group"><span class="nav-link-effect">Lore</span></a></li>
+      <li><a href="mythology.html" class="relative text-gray-200 transition duration-300 group"><span class="nav-link-effect">Mythology</span></a></li>
+      <li><a href="factions.html" class="relative text-gray-200 transition duration-300 group"><span class="nav-link-effect">Factions</span></a></li>
+    </ul>
+    <div class="flex items-center gap-4 font-semibold text-sm tracking-wide">
+      <a href="https://discord.gg/yourdiscord" target="_blank" class="uppercase group"><span class="nav-link-effect">Discord</span></a>
+      <a href="https://youtube.com/yourchannel" target="_blank" class="uppercase group"><span class="nav-link-effect">YouTube</span></a>
+      <a href="https://tiktok.com/@yourtiktok" target="_blank" class="uppercase group"><span class="nav-link-effect">TikTok</span></a>
     </div>
+  </nav>
 
-    <!-- Navbar - Glassmorphic -->
-    <nav class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-4xl z-30 mb-8">
-      <div class="backdrop-blur bg-black bg-opacity-50 border border-gray-700 rounded-full px-6 py-3 flex justify-center space-x-6 text-sm uppercase tracking-wider text-gray-200 shadow-lg">
-        <a href="#home" class="hover:text-white transition">Home</a>
-        <a href="#lore" class="hover:text-white transition">Lore</a>
-        <a href="#timeline" class="hover:text-white transition">Timeline</a>
-        <a href="#myths" class="hover:text-white transition">Myths & Legends</a>
-        <a href="https://discord.gg/YOURSERVER" target="_blank" class="hover:text-indigo-400 transition">Discord</a>
-        <a href="https://youtube.com/YOURCHANNEL" target="_blank" class="hover:text-red-400 transition">YouTube</a>
-        <a href="https://tiktok.com/@YOURHANDLE" target="_blank" class="hover:text-pink-400 transition">TikTok</a>
-      </div>
-    </nav>
-  </header>
+  <!-- Hero Section -->
+  <section id="home" class="relative min-h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('images/server-spawn.jpg');">
+    <div class="absolute inset-0 bg-black/80"></div>
+    <div class="relative z-10 p-8">
+      <div class="flex justify-center mb-6">
+  <img src="images/dawn-logo.png" alt="Dawn of Darkness Logo" class="h-24 md:h-40 drop-shadow-xl" />
+</div>
 
-<section id="lore" class="py-20 px-4 bg-black bg-opacity-70 text-gray-200">
-  <div class="max-w-4xl mx-auto">
-
-    <!-- Intro -->
-    <h2 class="text-4xl md:text-5xl font-bold text-center mb-10 border-b border-gray-700 pb-4">
-      The Lore of the Crystallium Pantheon
-    </h2>
-    <p class="text-gray-400 text-lg leading-relaxed text-center mb-12">
-      In the beginning, there was only the Crystallium — a formless source of purpose, spirit, and raw will. 
-      From it emerged five beings, shaped not from matter but meaning. These were not simply gods... they were the World.
-    </p>
-
-    <!-- Gods Grid -->
-    <div class="grid md:grid-cols-2 gap-6 mb-16">
-
-      <!-- The Master -->
-      <div class="bg-gray-900 border border-green-700 p-6 rounded-xl shadow" data-aos="fade-up">
-        <h3 class="text-2xl text-green-400 font-bold mb-2">The Master</h3>
-        <p class="text-sm text-gray-400">
-          The World-Forger. Creator of land, forests, and the beasts that roam. He shaped the bones of reality and breathes through the wind and soil. He does not rule — he watches.
-        </p>
-      </div>
-
-      <!-- The Sister -->
-      <div class="bg-gray-900 border border-pink-500 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="100">
-        <h3 class="text-2xl text-pink-300 font-bold mb-2">The Sister</h3>
-        <p class="text-sm text-gray-400">
-          Soul-weaver. Maker of the first humans. She gifted emotion, love, and community to a cold world. Her presence lingers in bonds between friends, allies, and family.
-        </p>
-      </div>
-
-      <!-- The Queen -->
-      <div class="bg-gray-900 border border-purple-600 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="200">
-        <h3 class="text-2xl text-purple-400 font-bold mb-2">The Queen</h3>
-        <p class="text-sm text-gray-400">
-          Once mortal, now divine. She discovered Power Dynamis — the energy of ascension. Ambitious and dangerous, she believes all have the right to rise... if they dare.
-        </p>
-      </div>
-
-      <!-- The Hero -->
-      <div class="bg-gray-900 border border-yellow-500 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="300">
-        <h3 class="text-2xl text-yellow-300 font-bold mb-2">The Hero</h3>
-        <p class="text-sm text-gray-400">
-          Slayer of the Ender Dragon, protector of the flame. They walk not with armies, but with courage. The Hero is proof that mortals can become legends — without losing their soul.
-        </p>
-      </div>
-
-      <!-- The Bandit -->
-      <div class="bg-gray-900 border border-red-600 p-6 rounded-xl shadow col-span-full" data-aos="fade-up" data-aos-delay="400">
-        <h3 class="text-2xl text-red-400 font-bold mb-2">The Bandit</h3>
-        <p class="text-sm text-gray-400">
-          God of thieves and misrule. The Bandit doesn’t destroy — they disrupt. Under a dozen banners and shadowy deals, they laugh, steal, and twist the order. And yet... the world needs them.
-        </p>
-      </div>
-
+      <p class="text-xl md:text-2xl text-gray-300 mb-8 italic">"In the shadows of the old world, a new fate begins."</p>
+      <a href="#join" class="bg-red-600 hover:bg-red-500 text-white px-6 py-3 text-lg rounded-xl shadow-md transition-all">Join Now: play.dawnofdarkness.net</a>
     </div>
-
-    <!-- Dawn of Darkness -->
-    <div class="mb-16">
-      <h3 class="text-3xl font-semibold mb-4 text-indigo-300">The Dawn of Darkness</h3>
-      <p class="text-gray-400 text-base leading-relaxed">
-        The skies change. The sun still rises, but gives no light. For days — sometimes a week — the world remains locked in eternal night.
-        No god claims responsibility. None offer comfort. The <b>Dawn of Darkness</b> is not a prophecy... it is a phenomenon.
-        <br><br>
-        Mobs grow restless, crops wither, visibility fades. Some believe it's a test from The Queen, others say The Bandit triggers it for sport. 
-        Regardless of cause, the <i>Dawn</i> changes everything.
-        <ul class="list-disc list-inside mt-4 text-sm text-gray-400">
-          <li>Rare mobs and corrupted beasts appear in the night.</li>
-          <li>Factions war under moonlight for scarce resources.</li>
-          <li>Black markets rise. Light is traded like gold.</li>
-          <li>Only the brave — or the foolish — travel far from home.</li>
-        </ul>
-      </p>
-    </div>
-
-    <!-- This Age -->
-    <div>
-      <h3 class="text-3xl font-semibold mb-4 text-teal-300">This Age of Choice</h3>
-      <p class="text-gray-400 text-base leading-relaxed">
-        The gods no longer command. They walk among mortals, hidden or known, curious to see what will come next. 
-        This is no golden age. Nor is it the end.
-        <br><br>
-        This is the age of <b>factions</b>. Of raiders, rulers, merchants, mystics. Of broken alliances and legendary champions.
-        Your story begins not in fire or light — but in shadow.
-        <br><br>
-        This is the <b><i>Dawn of Darkness</i></b>.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<section id="timeline" class="py-24 px-4 bg-black bg-opacity-70 text-gray-200">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 border-b border-gray-700 pb-4">
-      Timeline of the Realms
-    </h2>
-
-    <div class="relative border-l-4 border-gray-800 pl-8 space-y-16">
-
-      <!-- AGE 1: The Awakening -->
-      <div class="relative" data-aos="fade-up">
-        <div class="absolute -left-5 top-2 w-4 h-4 bg-green-400 rounded-full shadow-lg border-2 border-black"></div>
-        <div class="bg-gray-900 border border-green-700 bg-opacity-80 rounded-xl p-6 shadow-lg">
-          <p class="text-sm text-green-300 font-semibold uppercase mb-1">The First Age</p>
-          <h3 class="text-2xl font-bold text-white mb-2">The Awakening of the Master</h3>
-          <p class="text-gray-400 text-base">
-            From silence came purpose. The Master rose from the Crystallium and shaped the world’s bones — land, ocean, beast, and sky. Alone, he breathed order into chaos, crafting a world ready for life.
-          </p>
-        </div>
-      </div>
-
-      <!-- AGE 2: The Soul Age -->
-      <div class="relative" data-aos="fade-up" data-aos-delay="100">
-        <div class="absolute -left-5 top-2 w-4 h-4 bg-pink-400 rounded-full shadow-lg border-2 border-black"></div>
-        <div class="bg-gray-900 border border-pink-500 bg-opacity-80 rounded-xl p-6 shadow-lg">
-          <p class="text-sm text-pink-300 font-semibold uppercase mb-1">The Second Age</p>
-          <h3 class="text-2xl font-bold text-white mb-2">The Gift of the Sister</h3>
-          <p class="text-gray-400 text-base">
-            The Sister followed, bringing warmth to the world. She gave soul to mortals — love, grief, friendship, and memory. Humanity was born, and with it, the power of connection and legacy.
-          </p>
-        </div>
-      </div>
-
-      <!-- AGE 3: The Ascension -->
-      <div class="relative" data-aos="fade-up" data-aos-delay="200">
-        <div class="absolute -left-5 top-2 w-4 h-4 bg-purple-500 rounded-full shadow-lg border-2 border-black"></div>
-        <div class="bg-gray-900 border border-purple-600 bg-opacity-80 rounded-xl p-6 shadow-lg">
-          <p class="text-sm text-purple-300 font-semibold uppercase mb-1">The Third Age</p>
-          <h3 class="text-2xl font-bold text-white mb-2">The Rise of the Queen</h3>
-          <p class="text-gray-400 text-base">
-            A mortal, brilliant and defiant, unlocked the secrets of Power Dynamis. She became the first to ascend — the Queen. Her godhood fractured the balance. Now, any who dare may pursue divinity.
-          </p>
-        </div>
-      </div>
-
-      <!-- AGE 4: The Reckoning -->
-      <div class="relative" data-aos="fade-up" data-aos-delay="300">
-        <div class="absolute -left-5 top-2 w-4 h-4 bg-yellow-400 rounded-full shadow-lg border-2 border-black"></div>
-        <div class="bg-gray-900 border border-yellow-500 bg-opacity-80 rounded-xl p-6 shadow-lg">
-          <p class="text-sm text-yellow-300 font-semibold uppercase mb-1">The Fourth Age</p>
-          <h3 class="text-2xl font-bold text-white mb-2">The Coming of the Hero</h3>
-          <p class="text-gray-400 text-base">
-            Chaos followed ascension. The world turned cold. From the ashes rose the Hero — a mortal who felled the Ender Dragon and chose justice over power. Their legacy echoes in every act of courage.
-          </p>
-        </div>
-      </div>
-
-      <!-- AGE 5: The Veil of Night -->
-      <div class="relative" data-aos="fade-up" data-aos-delay="400">
-        <div class="absolute -left-5 top-2 w-4 h-4 bg-red-500 rounded-full shadow-lg border-2 border-black"></div>
-        <div class="bg-gray-900 border border-red-600 bg-opacity-80 rounded-xl p-6 shadow-lg">
-          <p class="text-sm text-red-300 font-semibold uppercase mb-1">The Fifth Age</p>
-          <h3 class="text-2xl font-bold text-white mb-2">The Laugh of the Bandit</h3>
-          <p class="text-gray-400 text-base">
-            From shadow came opportunity. The Bandit claimed no kingdom, but ruled countless factions in silence. Under their influence, theft became currency and chaos, a form of freedom. The gods began to walk the world again — not as rulers, but as watchers.
-          </p>
-        </div>
-      </div>
-
-      <!-- AGE 6: The Dawn of Darkness -->
-      <div class="relative" data-aos="fade-up" data-aos-delay="500">
-        <div class="absolute -left-5 top-2 w-4 h-4 bg-indigo-500 rounded-full shadow-lg border-2 border-black"></div>
-        <div class="bg-gray-900 border border-indigo-600 bg-opacity-80 rounded-xl p-6 shadow-lg">
-          <p class="text-sm text-indigo-300 font-semibold uppercase mb-1">The Sixth Age (Present Day)</p>
-          <h3 class="text-2xl font-bold text-white mb-2">The Dawn of Darkness</h3>
-          <p class="text-gray-400 text-base">
-            The sun now rises, but gives no light. Days turn to eternal night, for reasons even the gods don’t understand. Mobs swarm, crops fail, and fear spreads. Some call it an omen, others an opportunity. 
-            But one truth remains: the world is no longer shaped by gods alone.
-            <br><br>
-            Factions rise. Cities form. The brave seek fortune or glory in the dark. And the gods — the Five — watch closely, waiting to see what mortals will become.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<section id="myths" class="py-24 px-4 bg-black bg-opacity-70 text-gray-200">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 border-b border-gray-700 pb-4">
-      Relics of the Pantheon
-    </h2>
-
-    <div class="grid md:grid-cols-3 gap-8">
-
-      <!-- 1. The Master's Rooted Axe -->
-      <div class="bg-gray-900 border border-green-700 p-6 rounded-xl shadow" data-aos="fade-up">
-        <h3 class="text-2xl font-bold text-green-400 mb-2">The Master's Rooted Axe</h3>
-        <p class="text-sm text-gray-400">
-          <b>Item:</b> Netherite Axe<br>
-          <b>Enchantments:</b> Efficiency V, Unbreaking III, Mending<br>
-          Said to have felled the first forest. Trees seem to fall faster when it swings. Resonates near ancient groves.
-        </p>
-      </div>
-
-      <!-- 2. The Sister’s Keepsake -->
-      <div class="bg-gray-900 border border-pink-500 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="100">
-        <h3 class="text-2xl font-bold text-pink-300 mb-2">The Sister’s Keepsake</h3>
-        <p class="text-sm text-gray-400">
-          <b>Item:</b> Totem of Undying (renamed)<br>
-          <b>Flavor:</b> Glows faintly when held. Used by those who protect others before themselves.
-        </p>
-      </div>
-
-      <!-- 3. Crown of the Ambitious -->
-      <div class="bg-gray-900 border border-purple-600 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="200">
-        <h3 class="text-2xl font-bold text-purple-400 mb-2">Crown of the Ambitious</h3>
-        <p class="text-sm text-gray-400">
-          <b>Item:</b> Golden Helmet<br>
-          <b>Enchantments:</b> Curse of Binding<br>
-          Worn by those seeking power, not protection. A symbol of status — and hubris.
-        </p>
-      </div>
-
-      <!-- 4. The Emberbrand Blade -->
-      <div class="bg-gray-900 border border-yellow-500 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="300">
-        <h3 class="text-2xl font-bold text-yellow-300 mb-2">The Emberbrand Blade</h3>
-        <p class="text-sm text-gray-400">
-          <b>Item:</b> Diamond Sword<br>
-          <b>Enchantments:</b> Fire Aspect II, Sharpness IV<br>
-          Burns brighter during the Dawn. Favored by lone champions in the dark.
-        </p>
-      </div>
-
-      <!-- 5. Coin of Broken Deals -->
-      <div class="bg-gray-900 border border-red-600 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="400">
-        <h3 class="text-2xl font-bold text-red-400 mb-2">Coin of Broken Deals</h3>
-        <p class="text-sm text-gray-400">
-          <b>Item:</b> Gold Nugget (renamed)<br>
-          Flip it before a trade. Some say it changes minds. Others say it curses them.
-        </p>
-      </div>
-
-      <!-- 6. Lantern of the False Dawn -->
-      <div class="bg-gray-900 border border-indigo-500 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="500">
-        <h3 class="text-2xl font-bold text-indigo-300 mb-2">Lantern of the False Dawn</h3>
-        <p class="text-sm text-gray-400">
-          <b>Item:</b> Lantern<br>
-          A pale, eerie glow. Useful in the eternal night. Some claim it "calms" mobs — or their minds.
-        </p>
-      </div>
-
-      <!-- 7. Shard of Ascension -->
-      <div class="bg-gray-900 border border-purple-400 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="600">
-        <h3 class="text-2xl font-bold text-purple-300 mb-2">Shard of Ascension</h3>
-        <p class="text-sm text-gray-400">
-          <b>Item:</b> Amethyst Shard<br>
-          Said to be the crystal that sparked the Queen’s rise. Carried by those chasing greatness.
-        </p>
-      </div>
-
-      <!-- 8. The Bandit’s Last Laugh -->
-      <div class="bg-gray-900 border border-red-500 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="700">
-        <h3 class="text-2xl font-bold text-red-300 mb-2">The Bandit’s Last Laugh</h3>
-        <p class="text-sm text-gray-400">
-          <b>Item:</b> Crossbow<br>
-          <b>Enchantments:</b> Quick Charge II, Multishot<br>
-          It always fires first. Found in the hands of those who shoot before speaking.
-        </p>
-      </div>
-
-      <!-- 9. Boots of the Wanderer -->
-      <div class="bg-gray-900 border border-yellow-400 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="800">
-        <h3 class="text-2xl font-bold text-yellow-300 mb-2">Boots of the Wanderer</h3>
-        <p class="text-sm text-gray-400">
-          <b>Item:</b> Diamond Boots<br>
-          <b>Enchantments:</b> Depth Strider III, Feather Falling IV<br>
-          Worn by The Hero in exile. Designed for those who run toward danger.
-        </p>
-      </div>
-
-      <!-- 10. Whisperbark Charm -->
-      <div class="bg-gray-900 border border-green-500 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="900">
-        <h3 class="text-2xl font-bold text-green-300 mb-2">Whisperbark Charm</h3>
-        <p class="text-sm text-gray-400">
-          <b>Item:</b> Oak Sapling (renamed)<br>
-          The Master’s quiet mark. Carried by peaceful builders and druids. Trees seem to grow taller nearby.
-        </p>
-      </div>
-
-      <!-- 11. Tear of the Sister -->
-      <div class="bg-gray-900 border border-pink-300 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="1000">
-        <h3 class="text-2xl font-bold text-pink-200 mb-2">Tear of the Sister</h3>
-        <p class="text-sm text-gray-400">
-          <b>Item:</b> Ghast Tear<br>
-          Left behind during a time of great loss. Used in healing rituals and grief offerings.
-        </p>
-      </div>
-
-      <!-- 12. Fragment of Nightfall -->
-      <div class="bg-gray-900 border border-indigo-400 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="1100">
-        <h3 class="text-2xl font-bold text-indigo-200 mb-2">Fragment of Nightfall</h3>
-        <p class="text-sm text-gray-400">
-          <b>Item:</b> Black Dye (renamed)<br>
-          Found only during a true Dawn of Darkness. Used to dye armor black, symbolizing devotion to the night.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
+  </section>
 
 </body>
 </html>

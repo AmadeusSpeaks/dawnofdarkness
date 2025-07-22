@@ -1,0 +1,125 @@
+<!-- factions.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Factions | Dawn of Darkness</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    .hero-title {
+      font-family: 'Cinzel Decorative', serif;
+    }
+
+    .nav-link-effect::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      left: 0;
+      bottom: -2px;
+      background: #ef4444;
+      transition: width 0.4s ease;
+    }
+
+    .group:hover .nav-link-effect::after {
+      width: 100%;
+    }
+
+    .nav-link-effect {
+      position: relative;
+      transition: color 0.4s ease;
+      display: inline-block;
+    }
+
+    .group:hover .nav-link-effect {
+      color: #ef4444;
+      text-shadow: 0 0 8px rgba(239, 68, 68, 0.6);
+    }
+  </style>
+</head>
+<body class="bg-black text-white" style="background-image: url('images/obsidian-texture.png'); background-repeat: repeat; background-size: 128px 128px;">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-6 py-4 bg-black/70 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-lg">
+    <a href="index.html" class="flex items-center">
+      <img src="images/dawn-logo.png" alt="Dawn of Darkness Logo" class="h-10 md:h-12 object-contain" />
+    </a>
+    <ul class="hidden md:flex gap-6 text-base font-semibold tracking-widest uppercase">
+      <li><a href="index.html" class="relative text-gray-200 transition duration-300 group"><span class="nav-link-effect">Home</span></a></li>
+      <li><a href="lore.html" class="relative text-gray-200 transition duration-300 group"><span class="nav-link-effect">Lore</span></a></li>
+      <li><a href="mythology.html" class="relative text-gray-200 transition duration-300 group"><span class="nav-link-effect">Mythology</span></a></li>
+      <li><a href="factions.html" class="relative text-red-500 transition duration-300 group"><span class="nav-link-effect">Factions</span></a></li>
+    </ul>
+    <div class="flex items-center gap-4 font-semibold text-sm tracking-wide">
+      <a href="https://discord.gg/yourdiscord" target="_blank" class="uppercase group"><span class="nav-link-effect">Discord</span></a>
+      <a href="https://youtube.com/yourchannel" target="_blank" class="uppercase group"><span class="nav-link-effect">YouTube</span></a>
+      <a href="https://tiktok.com/@yourtiktok" target="_blank" class="uppercase group"><span class="nav-link-effect">TikTok</span></a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="pt-24">
+    <section class="max-w-6xl mx-auto px-6 py-16 space-y-16">
+
+      <!-- Avernus -->
+      <div class="flex flex-col md:flex-row items-center gap-8 bg-black/70 backdrop-blur-md rounded-lg p-6 shadow-lg border border-red-900">
+        <img src="./assets/avernus.jpg" alt="Avernus Faction" class="w-full md:w-1/2 rounded-md shadow-xl border border-gray-800" />
+        <div class="md:w-1/2 space-y-4">
+          <h2 class="text-3xl text-red-500 font-bold tracking-widest uppercase drop-shadow hero-title">Avernis</h2>
+          <p class="text-gray-200 leading-relaxed text-base md:text-lg">
+            The faction known as Avernis reveres the mysterious deity Avernus, the Unknown God believed to be the harbinger of the Eclipse. To them, the darkness is a divine punishment for ancient transgressions. Their priests preach that only by honoring Avernus and enduring his wrath can the world hope to find salvation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Gloomers -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8 bg-black/70 backdrop-blur-md rounded-lg p-6 shadow-lg border border-purple-900">
+        <img src="./assets/gloomers.jpg" alt="Gloomers Faction" class="w-full md:w-1/2 rounded-md shadow-xl border border-gray-800" />
+        <div class="md:w-1/2 space-y-4">
+          <h2 class="text-3xl text-purple-400 font-bold tracking-widest uppercase drop-shadow hero-title">Gloomers</h2>
+          <p class="text-gray-200 leading-relaxed text-base md:text-lg">
+            The Gloomers embrace the inevitable darkness. They prepare tirelessly for a world plunged into endless night, crafting underground farms bathed in torchlight and stone shelters carved deep beneath the earth. For them, survival is a sacred duty, a stubborn refusal to be swallowed by the night.
+          </p>
+        </div>
+      </div>
+
+      <!-- Vanguards -->
+      <div class="flex flex-col md:flex-row items-center gap-8 bg-black/70 backdrop-blur-md rounded-lg p-6 shadow-lg border border-yellow-700">
+        <img src="./assets/vanguards.jpg" alt="Vanguards Faction" class="w-full md:w-1/2 rounded-md shadow-xl border border-gray-800" />
+        <div class="md:w-1/2 space-y-4">
+          <h2 class="text-3xl text-yellow-400 font-bold tracking-widest uppercase drop-shadow hero-title">Vanguards</h2>
+          <p class="text-gray-200 leading-relaxed text-base md:text-lg">
+            Sworn to protect the innocent, the Vanguards rise each Eclipse to face the monsters born of the shadows. Armed with steel and resolve, they seek to keep the darkness at bay, defending their homes and kin from the terrors that come with the absence of light.
+          </p>
+        </div>
+      </div>
+
+      <!-- Starfinders -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8 bg-black/70 backdrop-blur-md rounded-lg p-6 shadow-lg border border-blue-900">
+        <img src="./assets/starfinder.jpg" alt="Starfinders Faction" class="w-full md:w-1/2 rounded-md shadow-xl border border-gray-800" />
+        <div class="md:w-1/2 space-y-4">
+          <h2 class="text-3xl text-blue-400 font-bold tracking-widest uppercase drop-shadow hero-title">Starfinders</h2>
+          <p class="text-gray-200 leading-relaxed text-base md:text-lg">
+            The Starfinders are scholars and seers, those who study the heavens and the cycles of the Eclipse. Gifted in prophecy and calculation, they can predict when the next shadow will fall, though the length and depth of the darkness remain mysteries beyond their reach. To them, knowledge is the light that will one day end the cycle.
+          </p>
+        </div>
+      </div>
+
+      <!-- Shadowborn -->
+      <div class="flex flex-col md:flex-row items-center gap-8 bg-black/70 backdrop-blur-md rounded-lg p-6 shadow-lg border border-gray-800">
+        <img src="./assets/shadowborn.jpg" alt="Shadowborn Faction" class="w-full md:w-1/2 rounded-md shadow-xl border border-gray-800" />
+        <div class="md:w-1/2 space-y-4">
+          <h2 class="text-3xl text-gray-400 font-bold tracking-widest uppercase drop-shadow hero-title">Shadowborn</h2>
+          <p class="text-gray-200 leading-relaxed text-base md:text-lg">
+            In the depths of the Eclipse, where fear and confusion reign, the Shadowborn thrive. Thieves, spies, and beggars, they exploit the chaos to infiltrate rival factions and enrich themselves. To them, the darkness is freedom, a veil behind which they wield power.
+          </p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>

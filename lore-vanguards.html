@@ -14,17 +14,23 @@
 </head>
 <body class="bg-black text-white" style="background-image: url('../images/obsidian-texture.png'); background-repeat: repeat; background-size: 128px 128px;">
 
-  <!-- Navbar -->
   <nav class="flex items-center justify-between px-6 py-4 bg-black/70 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-lg">
-    <a href="index.html" class="flex items-center">
-      <img src="../images/dawn-logo.png" alt="Dawn of Darkness Logo" class="h-10 md:h-12 object-contain" />
-    </a>
+    <a href="#home" class="flex items-center">
+  <img src="images/dawn-logo.png" alt="Dawn of Darkness Logo" class="h-10 md:h-12 object-contain" />
+</a>
     <ul class="hidden md:flex gap-6 text-base font-semibold tracking-widest uppercase">
-      <li><a href="../index.html" class="text-gray-200 hover:text-red-500 transition">Home</a></li>
-      <li><a href="../lore.html" class="text-gray-200 hover:text-red-500 transition">Lore</a></li>
-      <li><a href="../mythology.html" class="text-gray-200 hover:text-red-500 transition">Mythology</a></li>
-      <li><a href="../factions.html" class="text-red-500">Factions</a></li>
+      <li><a href="index.html" class="relative  text-red-500 transition duration-300 group"><span class="nav-link-effect">Home</span></a></li>
+      <li><a href="lore.html" class="relative text-gray-200 transition duration-300 group"><span class="nav-link-effect">Lore</span></a></li>
+      <li><a href="mythology.html" class="relative text-gray-200 transition duration-300 group"><span class="nav-link-effect">Mythology</span></a></li>
+      <li><a href="factions.html" class="relative text-gray-200 transition duration-300 group"><span class="nav-link-effect">Factions</span></a></li>
     </ul>
+
+    <div class="flex items-center gap-4 font-semibold text-sm tracking-wide">
+      <a href="https://discord.gg/yourdiscord" target="_blank" class="uppercase group"><span class="nav-link-effect">Discord</span></a>
+      <a href="https://youtube.com/yourchannel" target="_blank" class="uppercase group"><span class="nav-link-effect">YouTube</span></a>
+      <a href="https://tiktok.com/@yourtiktok" target="_blank" class="uppercase group"><span class="nav-link-effect">TikTok</span></a>
+    </div>
+
   </nav>
 
   <!-- Main Content -->
